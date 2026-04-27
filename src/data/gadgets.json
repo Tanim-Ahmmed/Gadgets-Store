@@ -1,0 +1,98 @@
+[
+  {
+    "id": "gadget-001",
+    "title": "Nova X12 Pro",
+    "category": "Phone",
+    "price": 999,
+    "rating": 4.8,
+    "brand": "NovaTech",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "shortDesc": "Flagship phone with an edge-to-edge OLED display and advanced camera system.",
+    "fullDesc": "The Nova X12 Pro combines a 6.7-inch OLED panel, a fast custom chipset, 256GB of storage, and a triple-lens camera array for sharp low-light photography and smooth all-day performance.",
+    "createdAt": "2026-04-05T09:30:00.000Z"
+  },
+  {
+    "id": "gadget-002",
+    "title": "AeroBook 14",
+    "category": "Laptop",
+    "price": 1299,
+    "rating": 4.7,
+    "brand": "AeroWare",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "shortDesc": "Lightweight productivity laptop with a sharp display and all-day battery.",
+    "fullDesc": "The AeroBook 14 pairs a 14-inch high-resolution display with 16GB RAM and a 512GB SSD, delivering a portable setup for developers, students, and remote professionals.",
+    "createdAt": "2026-04-09T08:15:00.000Z"
+  },
+    {
+    "id": "gadget-003",
+    "title": "Orbit S24",
+    "category": "Phone",
+    "price": 749,
+    "rating": 4.6,
+    "brand": "Orbit Mobile",
+    "image": "https://images.unsplash.com/photo-1512499617640-c2f999098c01",
+    "shortDesc": "A slim 5G smartphone built for fast multitasking and vivid streaming.",
+    "fullDesc": "Orbit S24 features a 120Hz AMOLED display, 128GB of storage, reliable battery life, and a durable aluminum frame, making it a strong everyday phone for work and entertainment.",
+    "createdAt": "2026-04-07T11:45:00.000Z"
+  },
+  {
+    "id": "gadget-004",
+    "title": "TitanBook Ultra 16",
+    "category": "Laptop",
+    "price": 1899,
+    "rating": 4.9,
+    "brand": "Titan Compute",
+    "image": "https://images.unsplash.com/photo-1517336714739-489689fd1ca8",
+    "shortDesc": "Premium 16-inch laptop designed for power users and creators.",
+    "fullDesc": "TitanBook Ultra 16 includes a large color-accurate display, 32GB of memory, 1TB SSD storage, and dedicated graphics performance for editing, rendering, and heavy multitasking.",
+    "createdAt": "2026-04-10T14:20:00.000Z"
+  },
+  {
+    "id": "gadget-005",
+    "title": "PulseBuds Air",
+    "category": "Accessory",
+    "price": 149,
+    "rating": 4.4,
+    "brand": "Pulse Audio",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    "shortDesc": "Wireless earbuds with active noise cancellation and clear call quality.",
+    "fullDesc": "PulseBuds Air offers balanced sound, pocket-friendly charging, dual-device pairing, and active noise cancellation tuned for commuting, calls, and casual listening.",
+    "createdAt": "2026-04-12T10:05:00.000Z"
+  },
+  {
+    "id": "gadget-006",
+    "title": "ChargeDock 3-in-1",
+    "category": "Accessory",
+    "price": 89,
+    "rating": 4.3,
+    "brand": "VoltBase",
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90",
+    "shortDesc": "Compact charging stand for phone, earbuds, and smartwatch.",
+    "fullDesc": "ChargeDock 3-in-1 keeps your desk tidy with a single cable design, stable charging pad, and dedicated spots for everyday devices used at home or in the office.",
+    "createdAt": "2026-04-14T13:50:00.000Z"
+  },
+  {
+    "id": "gadget-007",
+    "title": "ViewPad 11 Keyboard Case",
+    "category": "Accessory",
+    "price": 119,
+    "rating": 4.5,
+    "brand": "ViewPad",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0",
+    "shortDesc": "Protective keyboard case that turns a tablet into a travel workstation.",
+    "fullDesc": "This keyboard case features a magnetic attachment, adjustable viewing angles, responsive keys, and a slim exterior that protects your tablet without adding much bulk.",
+    "createdAt": "2026-04-18T16:25:00.000Z"
+  },
+  {
+    "id": "gadget-008",
+    "title": "PixelCam Go",
+    "category": "Accessory",
+    "price": 279,
+    "rating": 4.6,
+    "brand": "PixelCam",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+    "shortDesc": "Pocket-sized action camera with stabilized 4K recording.",
+    "fullDesc": "PixelCam Go captures smooth handheld footage with built-in stabilization, water-resistant housing, and fast wireless transfers for creators who shoot on the move.",
+    "createdAt": "2026-04-21T07:40:00.000Z"
+  }
+]

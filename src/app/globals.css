@@ -1,0 +1,75 @@
+@config "../../tailwind.config.ts";
+@import "tailwindcss";
+
+:root {
+  --background: #080616;
+  --foreground: #ffffff;
+  --card: #100d24;
+  --primary: #1a1953;
+  --border: #26224a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-border: var(--border);
+  --font-sans: var(--font-lato);
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lato), sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition:
+    color 200ms ease-in-out,
+    opacity 200ms ease-in-out,
+    transform 200ms ease-in-out;
+}
+
+a:hover {
+  color: color-mix(in srgb, white 88%, var(--primary) 12%);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 0.75rem;
+}
