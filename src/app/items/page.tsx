@@ -4,9 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import {
-  MotionSection,
-} from "@/components/motion/reveal";
 import { buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -113,7 +110,7 @@ export default function ItemsPage() {
   return (
     <div className="bg-transparent">
       <Section className="pt-16 sm:pt-20">
-        <MotionSection className="space-y-8">
+        <div className="space-y-8">
           <div className="space-y-4">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
               Browse gadgets
@@ -142,68 +139,68 @@ export default function ItemsPage() {
             </div>
           </div>
 
-          <MotionSection delay={0.08}>
+          <div>
             <Card className="p-5 sm:p-6">
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-              <div className="space-y-2">
-                <label
-                  htmlFor="search"
-                  className="text-sm font-medium text-slate-300"
-                >
-                  Search
-                </label>
-                <Input
-                  id="search"
-                  value={search}
-                  onChange={(event) => handleSearchChange(event.target.value)}
-                  placeholder="Search by title or brand"
-                />
-              </div>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <div className="space-y-2">
+                  <label
+                    htmlFor="search"
+                    className="text-sm font-medium text-slate-300"
+                  >
+                    Search
+                  </label>
+                  <Input
+                    id="search"
+                    value={search}
+                    onChange={(event) => handleSearchChange(event.target.value)}
+                    placeholder="Search by title or brand"
+                  />
+                </div>
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="category"
-                  className="text-sm font-medium text-slate-300"
-                >
-                  Category
-                </label>
-                <select
-                  id="category"
-                  value={category}
-                  onChange={(event) => handleCategoryChange(event.target.value)}
-                  className="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-white shadow-md transition-all duration-200 ease-in-out hover:border-primary/80 hover:shadow-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/70 focus:ring-offset-2 focus:ring-offset-background"
-                >
-                  {categories.map((itemCategory) => (
-                    <option key={itemCategory} value={itemCategory}>
-                      {itemCategory === "all" ? "All categories" : itemCategory}
-                    </option>
-                  ))}
-                </select>
-              </div>
+                <div className="space-y-2">
+                  <label
+                    htmlFor="category"
+                    className="text-sm font-medium text-slate-300"
+                  >
+                    Category
+                  </label>
+                  <select
+                    id="category"
+                    value={category}
+                    onChange={(event) => handleCategoryChange(event.target.value)}
+                    className="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-white shadow-md transition-all duration-200 ease-in-out hover:border-primary/80 hover:shadow-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/70 focus:ring-offset-2 focus:ring-offset-background"
+                  >
+                    {categories.map((itemCategory) => (
+                      <option key={itemCategory} value={itemCategory}>
+                        {itemCategory === "all" ? "All categories" : itemCategory}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="priceRange"
-                  className="text-sm font-medium text-slate-300"
-                >
-                  Price range
-                </label>
-                <select
-                  id="priceRange"
-                  value={priceRange}
-                  onChange={(event) => handlePriceRangeChange(event.target.value)}
-                  className="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-white shadow-md transition-all duration-200 ease-in-out hover:border-primary/80 hover:shadow-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/70 focus:ring-offset-2 focus:ring-offset-background"
-                >
-                  {priceRanges.map((range) => (
-                    <option key={range.value} value={range.value}>
-                      {range.label}
-                    </option>
-                  ))}
-                </select>
+                <div className="space-y-2">
+                  <label
+                    htmlFor="priceRange"
+                    className="text-sm font-medium text-slate-300"
+                  >
+                    Price range
+                  </label>
+                  <select
+                    id="priceRange"
+                    value={priceRange}
+                    onChange={(event) => handlePriceRangeChange(event.target.value)}
+                    className="w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-white shadow-md transition-all duration-200 ease-in-out hover:border-primary/80 hover:shadow-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/70 focus:ring-offset-2 focus:ring-offset-background"
+                  >
+                    {priceRanges.map((range) => (
+                      <option key={range.value} value={range.value}>
+                        {range.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
-            </div>
             </Card>
-          </MotionSection>
+          </div>
 
           {filteredItems.length > 0 ? (
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -266,7 +263,7 @@ export default function ItemsPage() {
               </p>
             </Card>
           )}
-        </MotionSection>
+        </div>
       </Section>
     </div>
   );

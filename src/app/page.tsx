@@ -17,7 +17,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 
-const featuredProducts = (gadgets as Gadget[]).slice(0, 4);
+const featuredProducts = (gadgets as Gadget[]).slice(0, 6);
 const topBrands = [...new Set((gadgets as Gadget[]).map((item) => item.brand))].slice(
   0,
   6,
@@ -233,6 +233,12 @@ export default function Home() {
                         </p>
                         <p className="text-sm text-slate-400">{product.brand}</p>
                       </div>
+                      <Link
+                        href={`/items/${product.id}`}
+                        className={buttonVariants("outline", "w-full")}
+                      >
+                        View More
+                      </Link>
                     </div>
                   </Card>
                 </div>
@@ -298,6 +304,12 @@ export default function Home() {
                         {product.rating.toFixed(1)} / 5
                       </p>
                     </div>
+                    <Link
+                      href={`/items/${product.id}`}
+                      className={buttonVariants("outline", "w-full")}
+                    >
+                      View More
+                    </Link>
                   </div>
                 </Card>
               </StaggerItem>
