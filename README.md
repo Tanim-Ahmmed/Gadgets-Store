@@ -7,7 +7,7 @@ This project demonstrates a polished frontend architecture with authentication, 
 ---
 
 ## 🚀 Live Demo
-> Add your Vercel link here
+> [live link here](https://gadgets-store-mu.vercel.app/)
 
 ---
 
