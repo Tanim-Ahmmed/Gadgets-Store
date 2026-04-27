@@ -117,17 +117,6 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          {isGoogleAvailable ? (
-            <Button
-              variant="outline"
-              className="w-full"
-              onClick={handleGoogleLogin}
-              disabled={loading || !isConfigured}
-            >
-              Continue with Google
-            </Button>
-          ) : null}
-
           <p className="text-sm text-slate-300">
             New here?{" "}
             <Link href="/register" className="font-medium text-white">

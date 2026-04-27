@@ -72,7 +72,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 py-5 text-sm text-slate-500">
-          Copyright 2026 Gadget Store. All rights reserved.
+          Copyright 2026 Tanim Ahmmed. All rights reserved.
         </div>
       </SiteContainer>
     </footer>
